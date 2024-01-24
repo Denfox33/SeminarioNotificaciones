@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Notifi2"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:id="@+id/icMsn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="2dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/baseline_message_24" />
+
+        <TextView
+            android:id="@+id/txtmsn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@id/icMsn"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toEndOf="@id/icMsn"
+            android:text="PM_notificacion"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvTiempo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@id/icMsn"
+            app:layout_constraintStart_toEndOf="@id/txtmsn"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="now"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/btnOcultar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/baseline_arrow_drop_down_24"
+            android:text="Ocultar"
+
+            app:layout_constraintStart_toEndOf="@id/tvTiempo"
+            app:layout_constraintTop_toTopOf="@id/tvTiempo" />
+
+
+        <ImageView
+            android:id="@+id/imgIcono"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/baseline_public_24"
+            android:text="Ocultar"
+
+            app:layout_constraintStart_toEndOf="@id/tvTiempo"
+            app:layout_constraintTop_toTopOf="@id/tvTiempo" />
+
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/idtitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Una notificacion" />
+        <TextView
+            android:id="@+id/idDescripcion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="con la informacion de Venus"></TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:padding="10dp"
+
+
+        >
+        <ImageView
+            android:id="@+id/imgNoti2"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/imgnoti2"
+            ></ImageView>
+
+    </LinearLayout>
+
+</RelativeLayout>
